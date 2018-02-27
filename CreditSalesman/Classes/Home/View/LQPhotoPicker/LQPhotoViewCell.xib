@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="LQPhotoViewCell" reuseIdentifier="LQPhotoViewCell" id="FZ6-gu-1mJ" customClass="LQPhotoViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="148"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ibK-Bf-GoS">
+                        <rect key="frame" x="10" y="10" width="105" height="108"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="105" id="GUs-fP-yVs"/>
+                            <constraint firstAttribute="width" secondItem="ibK-Bf-GoS" secondAttribute="height" multiplier="35:36" id="pLn-IR-bYr"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pug-h5-htl">
+                        <rect key="frame" x="105" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="0G5-gi-FKe"/>
+                            <constraint firstAttribute="height" constant="20" id="HUd-b9-JEI"/>
+                        </constraints>
+                        <state key="normal" image="close@3x.png">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nF3-be-bta">
+                        <rect key="frame" x="10" y="130" width="105" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="0.77434529049295775" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pug-h5-htl" secondAttribute="trailing" id="CiB-xT-n56"/>
+                <constraint firstItem="nF3-be-bta" firstAttribute="leading" secondItem="FZ6-gu-1mJ" secondAttribute="leading" constant="10" id="EZT-l3-b5z"/>
+                <constraint firstAttribute="bottom" secondItem="nF3-be-bta" secondAttribute="bottom" id="XWU-Ls-9ED"/>
+                <constraint firstAttribute="trailing" secondItem="nF3-be-bta" secondAttribute="trailing" constant="10" id="YW3-DZ-s2n"/>
+                <constraint firstItem="pug-h5-htl" firstAttribute="top" secondItem="FZ6-gu-1mJ" secondAttribute="top" id="bbY-EM-FwH"/>
+                <constraint firstAttribute="trailing" secondItem="ibK-Bf-GoS" secondAttribute="trailing" constant="10" id="fQt-Fv-jnv"/>
+                <constraint firstItem="ibK-Bf-GoS" firstAttribute="leading" secondItem="FZ6-gu-1mJ" secondAttribute="leading" constant="10" id="fVr-xx-Nu6"/>
+                <constraint firstItem="nF3-be-bta" firstAttribute="top" secondItem="ibK-Bf-GoS" secondAttribute="bottom" constant="12" id="tOQ-y5-tDi"/>
+                <constraint firstItem="ibK-Bf-GoS" firstAttribute="top" secondItem="FZ6-gu-1mJ" secondAttribute="top" constant="10" id="wiO-tK-X3C"/>
+            </constraints>
+            <size key="customSize" width="125" height="150"/>
+            <connections>
+                <outlet property="closeButton" destination="pug-h5-htl" id="eoP-aE-fh2"/>
+                <outlet property="desLabel" destination="nF3-be-bta" id="PsB-1r-GGe"/>
+                <outlet property="profilePhoto" destination="ibK-Bf-GoS" id="G6G-Df-kWl"/>
+            </connections>
+            <point key="canvasLocation" x="247.5" y="275"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="close@3x.png" width="60" height="61"/>
+    </resources>
+</document>

@@ -1,0 +1,56 @@
+//
+//  PrefixHeader.pch
+//  CreditSalesman
+//
+//  Created by 正和 on 2017/3/29.
+//  Copyright © 2017年 正和. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/**常用分类*/
+#import <UIKit/UIKit.h>
+#import "UIView+Extension.h"
+#import "HttpTool.h"
+
+
+//成都后台
+//#define  kOuternet  @"http://192.168.6.126:8080/CreditLoanWeb/"
+
+//志辉
+//#define  kOuternet @"http://192.168.3.133:8080/CreditLoanWeb/"
+
+//忠伟接口
+//#define  kOuternet @"http://192.168.3.74:8080/CreditLoanWeb/"
+
+//UAT
+//#define  kOuternet   @"http://182.150.20.24:10025/CreditLoanWeb/"
+
+/** 外网接口*/
+#define kOuternet  @"http://61.188.178.200:8088/CreditLoanWeb/"
+
+/**屏幕宽和高*/
+#define kScreenWidth          [[UIScreen mainScreen] bounds].size.width
+#define kScreenHeight         [[UIScreen mainScreen] bounds].size.height
+/** 根据屏幕宽度计算对应View的高*/
+#define ZHFit(value) ((value * kScreenWidth) / 375.0f)
+
+/**字体*/
+#define fontSize(x) [UIFont systemFontOfSize:(kScreenWidth > 374 ? (kScreenWidth > 375 ? x * 1.1 : x ) : x / 1.1)]
+/**加粗字体*/
+#define fontBoldSize(x) [UIFont boldSystemFontOfSize:(kScreenWidth > 374 ? (kScreenWidth > 375 ? x * 1.1 : x )  : x / 1.1)]
+
+/**简化单利方法*/
+#define kUserDefaults    [NSUserDefaults standardUserDefaults]
+
+/**十六进制颜色*/
+#define UIColorWithRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define ZHThemeColor      UIColorWithRGB(0xed6b00) //主题色
+#define ZHBackgroundColor UIColorWithRGB(0xf5f8fa)//底灰
+
+/**判断字符串是否为空*/
+#define NULLString(string) ([string isEqualToString:@""] || (string == nil) || ([string length] == 0)  || [string isKindOfClass:[NSNull class]] || [[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] == 0 ||[string isEqual:[NSNull null]])
+
+
+#endif /* PrefixHeader_pch */

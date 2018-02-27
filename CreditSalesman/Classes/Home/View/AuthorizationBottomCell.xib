@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AuthorizationBottomCell" rowHeight="170" id="KGk-i7-Jjw" customClass="AuthorizationBottomCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="什么是人行验证码？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrD-B1-wJj">
+                        <rect key="frame" x="40" y="0.0" width="150" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="QJR-UH-BEq"/>
+                            <constraint firstAttribute="height" constant="20" id="i3U-PC-tYg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" white="0.60999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhY-rE-rqo">
+                        <rect key="frame" x="40" y="25" width="295" height="33"/>
+                        <attributedString key="attributedText">
+                            <fragment content="一般在您提交查询的第二天，按照您注册时填写的手机号反馈含有身份验证码的短信。">
+                                <attributes>
+                                    <color key="NSColor" white="0.60999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获取失败？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpC-KX-DLk">
+                        <rect key="frame" x="40" y="88" width="150" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="98a-fC-a0j"/>
+                            <constraint firstAttribute="width" constant="150" id="Fzg-0m-I8N"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" white="0.60999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ern-QZ-1ZZ">
+                        <rect key="frame" x="40" y="113" width="295" height="33"/>
+                        <attributedString key="attributedText">
+                            <fragment content="您需要在收到验证码的7天内使用该验证码获取报告，超过后需要重新查询获取。">
+                                <attributes>
+                                    <color key="NSColor" white="0.60999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ern-QZ-1ZZ" firstAttribute="top" secondItem="CpC-KX-DLk" secondAttribute="bottom" constant="5" id="3fH-RQ-VUl"/>
+                    <constraint firstAttribute="trailing" secondItem="PhY-rE-rqo" secondAttribute="trailing" constant="40" id="Q7F-HM-5vz"/>
+                    <constraint firstItem="ern-QZ-1ZZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="Rd4-8A-2ML"/>
+                    <constraint firstItem="OrD-B1-wJj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="VWM-Om-s7X"/>
+                    <constraint firstItem="OrD-B1-wJj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Vmb-3P-Nau"/>
+                    <constraint firstItem="CpC-KX-DLk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="Zpj-2z-Gmx"/>
+                    <constraint firstItem="CpC-KX-DLk" firstAttribute="top" secondItem="PhY-rE-rqo" secondAttribute="bottom" constant="30" id="d6M-cA-gT4"/>
+                    <constraint firstAttribute="trailing" secondItem="ern-QZ-1ZZ" secondAttribute="trailing" constant="40" id="hE5-w4-IBi"/>
+                    <constraint firstItem="PhY-rE-rqo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="wLP-ai-EnL"/>
+                    <constraint firstItem="PhY-rE-rqo" firstAttribute="top" secondItem="OrD-B1-wJj" secondAttribute="bottom" constant="5" id="xHW-1N-Ebh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstLabelLeft" destination="VWM-Om-s7X" id="eSi-ie-abC"/>
+                <outlet property="fourthLeft" destination="Rd4-8A-2ML" id="zga-9n-Rz7"/>
+                <outlet property="fourthRight" destination="hE5-w4-IBi" id="9Jp-JK-FbO"/>
+                <outlet property="secendLabelLeft" destination="wLP-ai-EnL" id="UDc-tz-8rF"/>
+                <outlet property="secendLabelRight" destination="Q7F-HM-5vz" id="W51-lA-8W9"/>
+                <outlet property="thirdLeft" destination="Zpj-2z-Gmx" id="w8H-VY-ZZ3"/>
+                <outlet property="thirdTop" destination="d6M-cA-gT4" id="atN-2y-pUZ"/>
+            </connections>
+            <point key="canvasLocation" x="61.5" y="117"/>
+        </tableViewCell>
+    </objects>
+</document>
